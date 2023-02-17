@@ -30,10 +30,22 @@ def find_mismatch(text):
     return "Success"
 
 def main():
-    text = input()
-    mismatch = find_mismatch(text)
+    text2 = input()
     # Printing answer, write your code here
-    print(mismatch)
+    if text2 == "I":
+        text = input()
+        mismatch = find_mismatch(text)
+        print(mismatch)
+    elif text2 == "F":
+        text = input()
+        mismatch = find_mismatch(text)
+        print(mismatch)
+    else:
+        text = input()
+        mismatch = find_mismatch(text)
+        print(mismatch)
+
+    
 
 
 if __name__ == "__main__":
