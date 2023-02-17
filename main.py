@@ -15,7 +15,7 @@ def find_mismatch(text):
         if next in "([{":
             # Process opening bracket, write your code here
             opening_brackets_stack.append(Bracket(next, i))
-            pass
+            # pass
 
         if next in ")]}":
             # Process closing bracket, write your code here
@@ -24,7 +24,7 @@ def find_mismatch(text):
             pop = opening_brackets_stack.pop()
             if not are_matching(pop.char, next):
                 return i + 1
-            pass
+            # pass
     if opening_brackets_stack:
         return opening_brackets_stack[0].position + 1
     return "Success"
